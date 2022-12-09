@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: mediumaquamarine;
+        }
+
+        .mymovies {
+            width: 100%;
+            height: 250px;
+            margin: auto;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .mymovies>button {
+            width: 200px;
+            margin-top: 10px;
+            border-radius: 80px;
+            padding: 10px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+        }
+
+        .mymovies>button:hover {
+            border: 2px solid white;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 20px auto 20px auto;
+            width: 95%;
+            max-width: 1200px;
+        }
+
+        .form {
+            margin: 20px auto;
+            width: 35%;
+            height: 350px;
+            border: 1pt;
+            padding: 20px;
+            box-shadow: 0px 0px 3px 0px gray;
+            background-color: white;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        .comment {
+            height: 78pt;
+        }
+
+        .card-body > .comments{
+            color: grey;
+            font-size: 10pt;
+        }
+
+        .button{
+            margin: center;
+            text-align: center;
+            margin-top: -7pt;
+        }
+
+        .jumbotron{
+            background-image: url("https://tiermaker.com/images/templates/anime-shonen-1210948/12109481649349433.jpg");
+        }
+
+        .judul{
+            border-radius: 15px;
+            margin-right: 42%;
+            margin-left: 42%;
+            background-color: red;
+            text-align: center;
+            font-size: 36pt;
+            font-family: 'Bangers', cursive;
+        }
+
+        .desc-judul{
+            border-radius: 20px;
+            font-size: 15pt;
+            margin-right: 37%;
+            margin-left: 37%;
+            background-color: red;
+            text-align: center;
+            font-family: 'Bangers', cursive;
+        }
+
+        nav{
+            margin-top: -3%;
+        }
+        
+    </style>
+    <title>MyGames</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="judul" >ANIMEK</h1>
+        <p class="desc-judul">YOUR WAIFU WAITING YOU HERE</p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">ANIMEK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">List</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Category
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Under Construction</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Find your anime!" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Find</button>
+          </form>
+        </div>
+      </nav>
+
+    <div class="form-box">
+        <div class="form">
+            <form class="form-floating">
+                <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com">
+                <label for="floatingInputValue">Anime url</label>
+              </form>
+              <br>  
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>-- select a rating --</option>
+                  <option value="1">One Star</option>
+                  <option value="2">Two Stars</option>
+                  <option value="3">Three Stars</option>
+                  <option value="3">Four Stars</option>
+                  <option value="3">Five Stars</option>
+                </select>
+                <label for="floatingSelect">Anime Ratings</label>
+              </div>
+              <br>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+              </div>
+              <br>
+              <div class="button">
+                <button type="button" class="btn btn-dark">Search</button>                
+                <button type="button" class="btn btn-light">Save</button>
+              </div>    
+              
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://img.bunnycdnn.ru/_r/300x400/100/ff/73/ff736656ba002e0dd51363c3d889d9ff/ff736656ba002e0dd51363c3d889d9ff.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">One Piece</h5>
+                        <p class="card-text">a pirate with a straw hat flag, who wants to be the strongest pirate.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="comments">Greatest anime of all time</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://img.bunnycdnn.ru/_r/300x400/100/85/bf/85bf3984eb601ec792d3167ce0eb2176/85bf3984eb601ec792d3167ce0eb2176.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Bleach</h5>
+                        <p class="card-text">Ichigo Kurosaki a teenager who can see ghosts.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="comments">Greatest anime of all time</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://img.bunnycdnn.ru/_r/300x400/100/b3/da/b3da1326e07269ddd8d73475c5dabf2c/b3da1326e07269ddd8d73475c5dabf2c.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Chainsaw man</h5>
+                        <p class="card-text">a man who can transform into a chainsaw man.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="comments">Greatest anime of all time</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://img.bunnycdnn.ru/_r/300x400/100/da/3a/da3a3d57e29aa0dba87cd6e1596b78e9/da3a3d57e29aa0dba87cd6e1596b78e9.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Naruto</h5>
+                        <p class="card-text">A boy with yellow hair, have a beast animal inside him.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="comments">Greatest anime of all time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
